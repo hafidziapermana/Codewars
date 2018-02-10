@@ -7,7 +7,7 @@ var arrayOfSheeps = [true,  true,  true,  false,
               false, false, true,  true ];
 
 
-function countSheeps(arrayOfSheeps) {  
+function countSheeps(arrayOfSheeps) {
   var sheepsCounter = 0;
   for (var i = 0; i < arrayOfSheeps.length; i++) {
     if (arrayOfSheeps[i] == true) {
@@ -81,44 +81,3 @@ let categories = [
   {id: 'persian', 'parent': 'cats'},
   {id: 'siamese', 'parent': 'cats'},
 ]
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
