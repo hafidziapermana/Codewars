@@ -81,22 +81,25 @@ function filterItems(query) {
   })
 }
 
-const input = ["codewars","javascript","java"]
+const input = ["codewars","javascript","java", "sds"]
 
 function cutIt(array) {
+  const oldArr = [...array]
+  
   const isShortest = () => {
     return array.sort((a,b) => a.length - b.length)
-            .shift()
-            .length
+          .shift()
+          .length
   }
   const lastIndex = isShortest()
-  lastIndex
+  
   const sliced = (lastIndex) => {
-    return array.map((word) => word.slice(0, lastIndex))
+    return oldArr.map((word) => {
+      return word.slice(0, lastIndex)
+    })
   }
-  return sliced()
+  return sliced(lastIndex)
 }
 
-//console.log(isShortest(input))
 console.log(cutIt(input))
 
